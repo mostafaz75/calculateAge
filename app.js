@@ -20,3 +20,23 @@ function calculateAge(){
     
     result.innerHTML=  `your  age  is ${years} year and   ${month} months and  ${day}  day old `
 }
+useerInput.addEventListener('keydown',(e)=>{
+    e.preventDefault()
+})
+useerInput.addEventListener('click',()=>{
+    useerInput.showPicker()
+})
+
+
+function padTo2Digits(num) {
+    return num.toString().padStart(2, '0');
+  }
+  
+  function formatDate(date = new Date()) {
+    return [
+      date.getFullYear(),
+      padTo2Digits(date.getMonth() + 1),
+      padTo2Digits(date.getDate()),
+    ].join('-');
+  }
+useerInput.value= formatDate()
