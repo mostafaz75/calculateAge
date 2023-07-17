@@ -1,3 +1,5 @@
+// age project 
+// create & Design by Mostafa
 let useerInput= document.getElementById("userinput")
 useerInput.max= new Date().toISOString().split("T")[0];
 let result =  document.getElementById("result")

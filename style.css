@@ -349,3 +349,18 @@ body {
   color: rgb(0, 255, 136);
   font-size: 43px;
 }
+h1{
+  margin: 0 auto;
+  color: var(--glow-color);
+  opacity: .8;
+  font-family: "Raleway", sans-serif;
+  font-size: 6em;
+  perspective: 2em;
+  border: 4px solid var(--glow-color);
+  box-shadow: inset 0px 0px 0.5em 0px var(--glow-color),
+  0px 0px 0.5em 0px var(--glow-color);
+  border-radius: 22px;
+  padding: 11px;
+  letter-spacing: 9px;
+  animation: border-flicker 2s linear infinite;
+}
