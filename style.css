@@ -364,3 +364,11 @@ h1{
   letter-spacing: 9px;
   animation: border-flicker 2s linear infinite;
 }
+.persina-date{
+ 
+}
+.jlali-date{
+  color: red;
+  font-size: 43px;
+  display: inline;
+}

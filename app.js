@@ -18,16 +18,18 @@ function calculateAge(){
     let years=Math.abs(todayYear-yearBirth)
     let month=Math.abs(todayMonth-monthBirth)
     let day=Math.abs(todayDate-dayBirth)
-
+    const persinDate= new Date(useerInput.value).toLocaleDateString('fa-IR')
+    result.innerHTML=  `<p>Your  Age  Is <span  class='numone'>${years}</span> Year And  <span  class='numtwo'> ${month} </span>Months And <span  class='numthree'> ${day}</span>  Day Old </p>
+    <p class="persina-date">your Jalali Birth Date Is <p class="jlali-date">${persinDate}</p> </p>
     
-    result.innerHTML=  `<p>Your  Age  Is <span  class='numone'>${years}</span> Year And  <span  class='numtwo'> ${month} </span>Months And <span  class='numthree'> ${day}</span>  Day Old </p>`
+    `
     result.style.border= "solid var(--glow-color)"
     result.style.borderRadius="0.45em"
     result.style.padding=" 0.35em 1em"
     result.style.color="var(--glow-color)"
     result.style.boxShadow="inset 0px 0px 0.5em 0px var(--glow-color)",
     "0px 0px 0.5em 0px var(--glow-color)"
-   
+  
 }
 useerInput.addEventListener('keydown',(e)=>{
   e.preventDefault()
